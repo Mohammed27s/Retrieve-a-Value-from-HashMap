@@ -1,0 +1,41 @@
+import java.util.HashMap;
+import java.util.Map;
+
+//Retrieve a Value from HashMap
+public class RetrieveHashMap {
+
+    public static void main(String[] args){
+
+
+        HashMap<String, Integer> studentMap = new HashMap<>();
+
+        studentMap.put("Mohammed", 1767352);
+        studentMap.put("Majad", 7686623);
+        studentMap.put("Paul", 4324342);
+
+
+        int stduentId = 7686623;
+
+
+            for (Map.Entry<String, Integer> entry : studentMap.entrySet()) {
+                if (entry.getValue() == stduentId) {
+
+                    System.out.println("The student with Id number: " + entry.getValue() + " is " + entry.getKey());
+                    break;
+                }
+
+            }
+
+
+
+
+
+
+
+
+
+    }
+
+
+
+}
